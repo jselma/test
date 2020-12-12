@@ -22,7 +22,7 @@ from libreco.data import (
 
 ############################# READ DATA #############################
 data = pd.read_csv('dataLibrecoFormat.csv', sep=';')
-
+data = data[['user','item','label']]
 
 ############################# SPLIT DATA TRAIN, EVAL, TEST #############################
 # split whole data into three folds for training, evaluating and testing
