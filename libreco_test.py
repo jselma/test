@@ -29,25 +29,24 @@ data = data[['user','item','label']]
 train_data_01, eval_data_01, test_data_01 = random_split(data, multi_ratios=[0.7, 0.15, 0.15])
 
 print("User train:",train_data_01['user'].unique().size,
-      "\User validation:", eval_data_01['user'].unique().size,
-      "\User test:", test_data_01['user'].unique().size,
-      "\All users:", data['user'].unique().size,
+      "\nUser validation:", eval_data_01['user'].unique().size,
+      "\nUser test:", test_data_01['user'].unique().size,
+      "\nAll users:", data['user'].unique().size,
       
-      "\n\Item train:",train_data_01['item'].unique().size,
-      "\Item validation:", eval_data_01['item'].unique().size,
-      "\Item test:", test_data_01['item'].unique().size,
-      "\All items:", data['item'].unique().size,
+      "\n\nItem train:",train_data_01['item'].unique().size,
+      "\nItem validation:", eval_data_01['item'].unique().size,
+      "\nItem test:", test_data_01['item'].unique().size,
+      "\nAll items:", data['item'].unique().size,
       
      "\n\nTrain interactions:",train_data_01.shape[0],
      "\nValidation interactions:",eval_data_01.shape[0],
      "\nTest interactions:",test_data_01.shape[0],
-     "\All interactions:",data.shape[0],
+     "\nAll interactions:",data.shape[0],
      
-     "\n\Train percent:",train_data_01.shape[0]/data.shape[0],
+     "\nTrain percent:",train_data_01.shape[0]/data.shape[0],
      "\nValidation percent:",eval_data_01.shape[0]/data.shape[0],
      "\nTest percent:",test_data_01.shape[0]/data.shape[0],
      )
-
 
 
 
