@@ -73,7 +73,7 @@ factors = [50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 
 for tempFactor in factors:   
   
     reset_state("ALS")
-    als = ALS(task="ranking", data_info=data_info, embed_size=factorSel, n_epochs=itera,
+    als = ALS(task="ranking", data_info=data_info, embed_size=tempFactor, n_epochs=itera,
               reg=regulSel, alpha=alphaSel, seed=42)
     
     als.fit(train_data, verbose=2, use_cg=True, n_threads=4,
